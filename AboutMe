@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mateme | Systems Developer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-image: url('Images/header-bg.jpg'); /* Your background image */
+      background-size: cover;
+      background-position: center;
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 2px solid #00bfa6;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    header img.profile-photo {
+      width: 150px;
+      height: 210px;
+      border-radius: 100%;
+      object-fit: cover;
+      border: 2px solid #00bfa6;
+    }
+
+    header .header-info {
+      flex: 1;
+      text-align: left;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      text-align: center;
+
+    }
+
+    header p {
+      margin: -0.1rem 0 0;
+      font-style: italic;
+      font-size: 1.5rem;
+      text-align: center;
+      color: #00bfa6;
+
+    }
+
+    header img.logo {
+      height: 180px;
+      width: auto;
+      margin-left: auto;
+      margin-top: 0;
+      align-self: flex-start;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      color: #00bfa6;
+      border-bottom: 2px solid #00bfa6;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    ul li {
+      margin-bottom: 0.7rem;
+    }
+
+    .contact-info p {
+      margin: 0.3rem 0;
+      font-weight: 600;
+    }
+
+    a {
+      color: #00bfa6;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .icon {
+      display: inline-block;
+      background-color: #00bfa6;
+      width: 1.4rem;
+      height: 1.4rem;
+      border-radius: 3px;
+      margin-right: 0.5rem;
+      vertical-align: middle;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      border-top: 1px solid #333;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    .hire {
+      background-color: #1f1f1f;
+      padding: 1.5rem;
+      border: 1px solid #00bfa6;
+      border-radius: 8px;
+    }
+
+    .hire a.button {
+      display: inline-block;
+      margin-top: 10px;
+      background: #00bfa6;
+      color: #121212;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      header .header-info {
+        text-align: center;
+      }
+
+      header img.logo {
+        margin: 1rem auto 0;
+        height: 50px;
+        align-self: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="Images/Mateme.PNG" alt="Mateme Patient" class="profile-photo" />
+    <div class="header-info">
+      <h1>MATEME Patient</h1>
+      <p>Founder & CEO of TeraForge Hub</p>
+    </div>
+    <img src="Images/Logo.png" alt="TeraForge Hub Logo" class="logo" />
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am an Electronics & Telecommunications Technology graduate from Rwanda with Bachelor of Technology (Btech ETT), passionate about creating smart IoT systems, optimizing networks, and developing embedded firmware. I bring practical solutions to real-world problems using the latest technologies.
+      </p>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <ul>
+        <li><span class="icon"></span><strong>IoT Project Development:</strong> Custom ESP32 & 8266/Arduino IoT systems for agriculture, environment, or industrial uses, including sensors, GSM/Wi-Fi alerts, and dashboards.</li>
+        <li><span class="icon"></span><strong>Network Optimization & Troubleshooting:</strong> Improving local and wireless networks using tools like Wireshark, fiber solutions, and equipment diagnostics.</li>
+        <li><span class="icon"></span><strong>Embedded Firmware Development:</strong> Writing efficient firmware in C++ or MicroPython for ESP32 & 8266 and Arduino platforms.</li>
+        <li><span class="icon"></span><strong>IoT Dashboard & Web Interfaces:</strong> Responsive web dashboards built with Python (Flask), HTML/CSS, and JavaScript to monitor real-time sensor data.</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Smart Fertilization System:</strong> Developed an IoT solution for precision farming that monitors soil moisture and nutrients, enabling data-driven fertilization.</li>
+        <li><strong>Network Optimization:</strong> Improved internet connectivity and performance for educational institutions by diagnosing and optimizing wireless and fiber networks.</li>
+        <li><strong>IoT Smart Billboard:</strong> Created an IoT-enabled digital billboard for dynamic advertisement control.</li>
+        <li><strong>Cattle Monitoring & Oestrous Prediction:</strong> Designed an IoT and machine learning system for monitoring livestock health and predicting heat cycles.</li>
+      </ul>
+    </section>
+
+    <section id="hire" class="hire">
+      <h2>Hire Me</h2>
+      <p>If you're looking for a skilled developer to bring your IoT or embedded project to life, let's work together. I offer tailored services in firmware development, hardware integration, and smart dashboards.</p>
+      <p>📄 <a href="Mateme_Project_Proposal.pdf" class="button" target="_blank" download>Download Proposal</a></p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:niyomutabazipatient@gmail.com">niyomutabazipatient@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+250788863646">+250 788 863 646</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 TeraForge Hub | Rubavu, Rwanda 
+  </footer>
+</body>
+</html>
